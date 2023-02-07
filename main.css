@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  font-family: "Cairo", sans-serif;
+  font-size: 1.5em;
+}
+
+:root {
+  --blue: #2196f3;
+  --red: #f44336;
+}
+.container {
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: 0 0 5px 5px #ddd;
+  margin-top: 10px;
+}
+h2 {
+  color: var(--blue);
+  text-align: center;
+  margin: 20px;
+}
+.form {
+  background-color: #eee;
+  padding: 20px;
+
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: auto;
+  box-shadow: 0 0 5px 5px #ddd;
+  display: flex;
+}
+
+.form .input {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  flex: 1;
+  caret-color: var(--blue);
+  color: var(--blue);
+}
+.form .add {
+  background-color: var(--blue);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.tasks {
+  background-color: #eee;
+  margin-top: 20px;
+  padding: 20px;
+}
+.tasks > div {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px 5px #ddd;
+  color: var(--blue);
+  font-weight: bold;
+}
+.tasks > div span:nth-child(1) {
+  overflow: hidden;
+}
+.tasks > div span:nth-child(2) {
+  background-color: var(--blue);
+  padding: 0px 5px;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 11;
+}
+.tasks > div span:nth-child(2) img {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  opacity: 0.2;
+}
+@media (width<340px) {
+  .form {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+footer {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+::selection {
+  background-color: #2196f3;
+  color: white;
+}
